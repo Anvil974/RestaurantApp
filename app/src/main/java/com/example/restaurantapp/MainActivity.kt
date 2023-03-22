@@ -9,6 +9,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //ssdsdsdsdada
         //ssassasee
+
+        //I commented
         //ssdsadsd
     }
 }
