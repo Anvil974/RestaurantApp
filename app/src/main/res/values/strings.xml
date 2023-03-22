@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">RestaurantApp</string>
+    <string name="restaurant_hours">
+        M: 7:00AM - 2:00PM\n
+        T: 7:00AM - 2:00PM\n
+        W: 7:00AM - 2:00PM\n
+        Th: 7:00AM - 2:00PM\n
+        F: 7:00AM - 2:00PM\n
+        S: 7:00AM - 3:00PM\n
+        Su: 7:00AM - 3:00PM\n
+    </string>
+    <string name="restaurant_address">
+        123 Fake Street\n
+        Marietta, GA\n
+        30062
+    </string>
+    <string name="address_button_text">Address</string>
+    <string name="hours_button_text">Hours</string>
 </resources>
