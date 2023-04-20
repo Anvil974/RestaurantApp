@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/titleScreen">
 
     <fragment
@@ -10,7 +10,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:navGraph="@navigation/navigation"
+        app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true" />
     <fragment
         android:id="@+id/menuFragment"
