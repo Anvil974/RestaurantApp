@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         // Use Data Binding to get reference to the views
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        /* Will be moved at some point
         binding.displayAddressButton.setOnClickListener {
                 // Code here executes on main thread after user presses button
             if(binding.Address.visibility == View.GONE) {
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                 binding.Hours.visibility = View.GONE
             }
         }
+         */
     }
 
 
