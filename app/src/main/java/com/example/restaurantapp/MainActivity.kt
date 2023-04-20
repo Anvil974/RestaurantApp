@@ -16,12 +16,13 @@ import org.w3c.dom.Text
 private lateinit var binding: ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Use Data Binding to get reference to the views
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        //binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         /* Will be moved at some point
         binding.displayAddressButton.setOnClickListener {
@@ -43,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         }
          */
     }
-
 
 
 }
