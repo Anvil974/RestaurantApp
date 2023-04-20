@@ -26,5 +26,10 @@
             android:id="@+id/action_titleScreen_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/socialsFragment"
+        android:name="com.example.restaurantapp.SocialFragment"
+        android:label="fragment_socials"
+        tools:layout="@layout/fragment_social" />
 
 </navigation>
