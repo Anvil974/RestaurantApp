@@ -3,14 +3,12 @@ package com.example.restaurantapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.restaurantapp.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var bottomNav: BottomNavigationView
-    lateinit var binding: ActivityMainBinding
     private val titleFragment = TitleScreen()
     private val menuFragment = MenuFragment()
     private val socialFragment = SocialFragment()
