@@ -47,7 +47,7 @@ class TitleScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<View>(R.id.Address)
+
         view.findViewById<View>(R.id.displayAddressButton).setOnClickListener {
             if (view.findViewById<View>(R.id.Address).visibility == View.GONE) {
                 view.findViewById<View>(R.id.Address).visibility = View.VISIBLE
@@ -57,6 +57,7 @@ class TitleScreen : Fragment() {
                 view.findViewById<View>(R.id.sendToMap).visibility = View.GONE
             }
         }
+
         view.findViewById<View>(R.id.displayHoursButton).setOnClickListener {
             if (view.findViewById<View>(R.id.Hours).visibility == View.GONE) {
                 view.findViewById<View>(R.id.Hours).visibility = View.VISIBLE
@@ -64,6 +65,11 @@ class TitleScreen : Fragment() {
                 view.findViewById<View>(R.id.Hours).visibility = View.GONE
             }
         }
+
+        view.findViewById<View>(R.id.sendToMap).setOnClickListener{
+
+        }
+
     }
     fun setOnClickListener() {
 
