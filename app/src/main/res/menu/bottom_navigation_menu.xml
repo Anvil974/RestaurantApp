@@ -3,14 +3,13 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-
-        android:title="Menu Item 1"/>
+        android:title="Home"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:title="Menu Item 2"/>
+        android:title="Menu"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:title="Menu Item 3"/>
+        android:title="Socials"/>
 </menu>

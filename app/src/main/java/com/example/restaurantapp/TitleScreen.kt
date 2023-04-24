@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.annotation.Nullable
+import androidx.constraintlayout.widget.Group
 import org.w3c.dom.Text
 
 // TODO: Rename parameter arguments, choose names that match
@@ -50,9 +51,10 @@ class TitleScreen : Fragment() {
         view.findViewById<View>(R.id.displayAddressButton).setOnClickListener {
             if (view.findViewById<View>(R.id.Address).visibility == View.GONE) {
                 view.findViewById<View>(R.id.Address).visibility = View.VISIBLE
+                view.findViewById<View>(R.id.sendToMap).visibility = View.VISIBLE
             } else {
                 view.findViewById<View>(R.id.Address).visibility = View.GONE
-
+                view.findViewById<View>(R.id.sendToMap).visibility = View.GONE
             }
         }
         view.findViewById<View>(R.id.displayHoursButton).setOnClickListener {
