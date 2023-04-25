@@ -16,4 +16,7 @@
     <style name="Fragment.TitleScreen" parent="Theme.MaterialComponents.DayNight" >
         <item name="android:background">@color/purple</item>
     </style>
+    <style name="Fragment.SocialScreen" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:background">#6E6C71</item>
+    </style>
 </resources>
