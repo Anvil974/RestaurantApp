@@ -50,34 +50,38 @@ class TitleScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<View>(R.id.displayAddressButton).setOnClickListener {
-            if (view.findViewById<View>(R.id.Address).visibility == View.GONE) {
-                view.findViewById<View>(R.id.Address).visibility = View.VISIBLE
-                view.findViewById<View>(R.id.sendToMap).visibility = View.VISIBLE
+        //Initiallizing Buttons and TextViews from fragment_title_screen
+        val addressButton: Button = view.findViewById(R.id.displayAddressButton)
+        val mapButton: Button = view.findViewById(R.id.sendToMap)
+        val addressText: TextView = view.findViewById(R.id.Address)
+        val hoursButton: Button = view.findViewById(R.id.displayHoursButton)
+        val hourText: TextView = view.findViewById(R.id.Hours)
+
+        addressButton.setOnClickListener {
+            if (addressText.visibility == View.GONE) {
+                addressText.visibility = View.VISIBLE
+                mapButton.visibility = View.VISIBLE
             } else {
-                view.findViewById<View>(R.id.Address).visibility = View.GONE
-                view.findViewById<View>(R.id.sendToMap).visibility = View.GONE
+                addressText.visibility = View.GONE
+                mapButton.visibility = View.GONE
             }
         }
 
-        view.findViewById<View>(R.id.displayHoursButton).setOnClickListener {
-            if (view.findViewById<View>(R.id.Hours).visibility == View.GONE) {
-                view.findViewById<View>(R.id.Hours).visibility = View.VISIBLE
+        hoursButton.setOnClickListener {
+            if (hourText.visibility == View.GONE) {
+                hourText.visibility = View.VISIBLE
             } else {
-                view.findViewById<View>(R.id.Hours).visibility = View.GONE
+                hourText.visibility = View.GONE
             }
         }
 
-        view.findViewById<View>(R.id.sendToMap).setOnClickListener{
-            val gmmIntentUri = Uri.parse("geo:0,0?q=3991 Jessie Ct, Austell, GA")
+        mapButton.setOnClickListener{
+            val gmmIntentUri = Uri.parse("geo:0,0?q=Stingers Dining Hall")
+            //val gmmIntentUri = Uri.parse("geo:0,0?q=1100 South Marietta Pkwy SE, Marietta, GA")
             val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
             mapIntent.setPackage("com.google.android.apps.maps")
             startActivity(mapIntent)
-
         }
-
-    }
-    fun setOnClickListener() {
 
     }
     companion object {

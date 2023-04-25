@@ -3,13 +3,16 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-        android:title="Home"/>
+        android:title="Home"
+        android:icon="@drawable/icon_home"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:title="Menu"/>
+        android:title="Menu"
+        android:icon="@drawable/icon_menu"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:title="Socials"/>
+        android:title="Socials"
+        android:icon="@drawable/icon_share"/>
 </menu>

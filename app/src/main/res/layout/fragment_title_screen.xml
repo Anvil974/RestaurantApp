@@ -15,19 +15,25 @@
 
         <ImageView
             android:id="@+id/titleScreen"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/displayAddressButton"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
             android:src="@drawable/pancakes"
-            android:padding="10dp"/>
+            app:layout_constraintBottom_toTopOf="@id/displayAddressButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/displayAddressButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/address_button_text"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleScreen" />
 
@@ -36,10 +42,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/restaurant_address"
+            android:textSize="24sp"
             android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/sendToMap"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/displayAddressButton"
-            app:layout_constraintBottom_toTopOf="@id/sendToMap"/>
+            app:layout_constraintTop_toBottomOf="@+id/displayAddressButton" />
 
         <Button
             android:id="@+id/sendToMap"
@@ -47,29 +54,34 @@
             android:layout_height="wrap_content"
             android:text="Map"
             android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/Address"
+            app:icon="@drawable/icon_external"
+            app:iconGravity="end"
             app:layout_constraintBottom_toTopOf="@id/displayHoursButton"
-            app:layout_constraintStart_toStartOf="parent" />
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Address"
+            android:layout_marginLeft="10dp"/>
 
         <Button
             android:id="@+id/displayHoursButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/hours_button_text"
-            app:layout_constraintTop_toBottomOf="@id/sendToMap"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@id/Hours"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/Hours" />
+            app:layout_constraintTop_toBottomOf="@id/sendToMap" />
 
         <TextView
             android:id="@+id/Hours"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/restaurant_hours"
+            android:textSize="22sp"
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/displayHoursButton"/>
-
+            app:layout_constraintTop_toBottomOf="@+id/displayHoursButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

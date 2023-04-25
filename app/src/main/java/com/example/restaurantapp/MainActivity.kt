@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 
         loadFragment(titleFragment)
-        bottomNav = findViewById(R.id.bottom_navigation) as BottomNavigationView
+        bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.page_1 -> {
