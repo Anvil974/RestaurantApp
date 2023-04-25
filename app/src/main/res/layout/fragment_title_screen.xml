@@ -51,6 +51,7 @@
             app:layout_constraintBottom_toTopOf="@id/displayHoursButton"
             app:layout_constraintStart_toStartOf="parent" />
 
+
         <Button
             android:id="@+id/displayHoursButton"
             android:layout_width="wrap_content"

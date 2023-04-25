@@ -1,5 +1,7 @@
 package com.example.restaurantapp
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -67,6 +69,10 @@ class TitleScreen : Fragment() {
         }
 
         view.findViewById<View>(R.id.sendToMap).setOnClickListener{
+            val gmmIntentUri = Uri.parse("geo:0,0?q=3991 Jessie Ct, Austell, GA")
+            val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+            mapIntent.setPackage("com.google.android.apps.maps")
+            startActivity(mapIntent)
 
         }
 
